@@ -1,0 +1,15 @@
+{
+  "name": "10-years-anniversary",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "tsc --ignoreConfig tests/state-transitions.ts src/lib/game-state.ts src/lib/timeline.ts src/lib/finale-puzzle.ts src/lib/dog-run.ts --target ES2022 --module nodenext --moduleResolution nodenext --outDir .test-dist && node .test-dist/tests/state-transitions.js && node tests/assets.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "astro": "latest",
+    "typescript": "latest"
+  }
+}
